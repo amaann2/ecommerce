@@ -49,13 +49,13 @@ h4 {
 
 h1 {
   color: ${({ theme }) => theme.colors.heading};
-  font-size: 6rem;
-  font-weight: 900;
+  font-size: 4.9rem;
+  font-weight: bold;
 }
 
  h2 {
    color: ${({ theme }) => theme.colors.heading};
-   font-size: 4.4rem;
+   font-size: 4rem;
    font-weight: 300;
    white-space: normal;
   
@@ -85,13 +85,13 @@ li {
 ${"" /* resuable code section  */}
 
 .container {
-  max-width: 120rem;
+  max-width: 100rem;
   margin: 0 auto;
 }
 
 .grid {
   display: grid;
-  gap: 9rem;
+  gap:10rem;
 }
 
 .grid-two-column {
@@ -112,16 +112,16 @@ ${"" /* resuable code section  */}
 }
 
   .common-heading {
-      font-size: 3.8rem;
+      font-size: 2.4rem;
       font-weight: 600;
-      margin-bottom: 6rem;
+      margin-bottom: 3rem;
       text-transform: capitalize;
     }
 
      .intro-data {
       margin-bottom: 0;
       text-transform: uppercase;
-      color: #5138ee;
+      color: #bb84e8;
     }
 
    .caption {
@@ -145,18 +145,17 @@ input, textarea{
    box-shadow: ${({ theme }) => theme.colors.shadowSupport};
 }
     input[type="submit"]{
-    max-width: 16rem;
-    margin-top: 2rem;
-    background-color: ${({ theme }) => theme.colors.btn};
+    max-width: 12rem;
+    margin-top: 1rem;
+    background-color: #bb84e8;
     color: ${({ theme }) => theme.colors.white};
-    padding: 1.4rem 2.2rem;
+    padding: 1rem 2rem;
     border-style: solid;
     border-width: .1rem;
     text-transform: uppercase;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     cursor: pointer;
     }
-
 @media (max-width: ${({ theme }) => theme.media.tab}) {
     .container {
     max-width: 130rem;
@@ -164,11 +163,11 @@ input, textarea{
   }
   }
 
-   @media (max-width: ${({ theme }) => theme.media.mobile}) {
+   @media (max-width:768px) {
        html {
       font-size: 50%;
     }
-
+  
 .grid{
   gap: 3.2rem;
 }
